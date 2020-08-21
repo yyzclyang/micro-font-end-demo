@@ -1,0 +1,10 @@
+{
+  "name": "micro-font-end",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yyzcl <yyzclyang@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}
