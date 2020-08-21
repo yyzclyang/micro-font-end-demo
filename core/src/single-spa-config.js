@@ -23,5 +23,18 @@ registerApplication(
   (location) => location.pathname.startsWith('/app1'),
   { some: 'app1' }
 );
+// Config with more expressive API
+registerApplication({
+  name: 'app2',
+  app: async () => {
+    await runScript('http://localhost:3002/js/app.js');
+    await runScript('http://localhost:3002/js/about.js');
+    return window.APP2;
+  },
+  activeWhen: '/app2',
+  customProps: {
+    some: 'app2'
+  }
+});
 
 start();

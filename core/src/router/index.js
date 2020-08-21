@@ -22,6 +22,10 @@ const routes = [
   {
     path: '/app1',
     name: 'APP1'
+  },
+  {
+    path: '/app2',
+    name: 'APP2'
   }
 ];
 
