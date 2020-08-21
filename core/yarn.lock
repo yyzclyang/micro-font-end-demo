@@ -7223,6 +7223,11 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
+single-spa@^5.5.5:
+  version "5.5.5"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-5.5.5.tgz#77a947516874d50b1e1a43aa6c316b550605d4fb"
+  integrity sha512-10YHGwETkAT6k9dkOTClig2h/R6yA5qvLdvk6i7Z4/PK8A2iD/pVvYKIud0aZVA69OzO1lrQOHB4VgT4t8/kXw==
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
