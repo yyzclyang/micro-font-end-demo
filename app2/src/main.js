@@ -21,7 +21,8 @@ const vueLifecycles = singleSpaVue({
         }
       });
     },
-    router
+    router,
+    el: '#single-spa'
   }
 });
 
