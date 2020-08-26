@@ -1,6 +1,6 @@
 <template>
   <div id="core-app" class="core-app">
-    <div class="header">header</div>
+    <div class="header">header, count: {{count}}</div>
     <div class="main">
       <div class="slide">
         <router-link to="/app1#/">App1</router-link>
@@ -15,6 +15,16 @@
     </div>
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex';
+
+export default {
+  computed: mapState({
+    count: (state) => state.count
+  })
+};
+</script>
 
 <style lang="less">
 body {

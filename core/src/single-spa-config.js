@@ -1,4 +1,5 @@
 import { registerApplication, start } from 'single-spa';
+import store from './store';
 
 /*runScript：一个promise同步方法。可以代替创建一个script标签，然后加载服务*/
 const runScript = async (url) => {
@@ -21,7 +22,7 @@ registerApplication(
     return window.APP1;
   },
   (location) => location.pathname.startsWith('/app1'),
-  { some: 'app1' }
+  { store: store }
 );
 // Config with more expressive API
 registerApplication({
