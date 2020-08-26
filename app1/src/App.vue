@@ -4,10 +4,23 @@
       <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
       <p>welcome to app1</p>
+      <p>count: {{store.getters.count}}</p>
+      <button @click="increment">+</button>
     </div>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  props: ['store'],
+  methods: {
+    increment() {
+      this.store.dispatch('increment');
+    }
+  }
+};
+</script>
 
 <style lang="less">
 #app {

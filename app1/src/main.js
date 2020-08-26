@@ -11,11 +11,13 @@ const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
     render(h) {
+      console.log('child', this.store);
       return h(App, {
         props: {
           // single-spa props are available on the "this" object. Forward them to your component as needed.
           // https://single-spa.js.org/docs/building-applications#lifecyle-props
-          name: this.name,
+          store: this.store,
+          name: 'name-app1',
           mountParcel: this.mountParcel,
           singleSpa: this.singleSpa
         }
